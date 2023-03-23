@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="icon" type="image/svg" sizes="32x32" href="../images/logo.svg">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<title>FMC Signup</title>
+</head>
+<body>
+
+	<main class="Signup-main">
+		<section class="Signup-header">
+			<h1>Welcome Back</h1>
+			<p>Please enter your login details below</p>
+		</section>
+		<fieldset class="Signup-fieldset">
+			<div class="Signup-toggle">
+				<a href="#" class="patientSignups">Patient Login</a>
+				<a href="#" class="adminLogins">Admin Login</a>
+				<a href="#" class="doctorSignup">Doctor Login</a>
+			</div>
+			<form class="SignupForm">
+				<label>Email Address</label>
+				<input type="text" name="email" placeholder="Enter your email address">
+				<label>Password</label>
+				<div class="password-field">
+					<input type="text" name="password" placeholder="Enter your Password" class="InputPassword">
+					<span type="checkbox" class="fa fa-lock field-icon toggle-password" id="toggler"></span>
+				</div>
+				<button class="SignupButton">Sign In</button>
+				<a class="backHome" href="../index.html">&#8656 Back to home</a>
+			</form>
+		</fieldset>
+	</main>
+
+</body>
+</html>
