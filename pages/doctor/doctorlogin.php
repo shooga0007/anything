@@ -41,7 +41,7 @@ header("location:doctorlogin.php");
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="icon" type="image/svg" sizes="32x32" href="../images/logo.svg">
+	<link rel="icon" type="image/svg" sizes="32x32" href="../../images/logo.svg">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
 	<title>Doctor Login</title>
 </head>

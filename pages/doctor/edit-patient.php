@@ -2,11 +2,8 @@
 session_start();
 error_reporting(0);
 include('include/config.php');
-if(strlen($_SESSION['id']==0)) {
- header('location:logout.php');
-  } else{
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +11,7 @@ if(strlen($_SESSION['id']==0)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/svg" sizes="32x32" href="../../images/logo.svg">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
-		<title>Doctor | Dashboard FMC Umuahia</title>
+		<title>Doctor | edit-patient FMC Umuahia</title>
 	</head>
 	<body>
 		<header>
@@ -109,28 +106,4 @@ if(strlen($_SESSION['id']==0)) {
 					</ul>
 				</div>
 			</div>
-		<h1>DOCTOR DASHBOARD</h1>
-		<section class="section-div">
-			<div>
-				<h2>My Profile</h2>
-				<a href="edit-profile.php">Update Profile</a>
-			</div>
-			<div>
-				<h2>My Appointments</h2>
-				<a href="appointment-history.php">View Appointment History</a>
-			</div>
-		</section>
-	</main>
-</section>
-
-
-<script>
-	jQuery(document).ready(function() {
-		Main.init();
-		FormElements.init();
-	});
-</script>
-
-</body>
-</html>
-<?php } ?>
+		<h1>DOCTOR EDIT-PATIENT</h1>

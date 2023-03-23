@@ -2,11 +2,8 @@
 session_start();
 error_reporting(0);
 include('include/config.php');
-if(strlen($_SESSION['id']==0)) {
- header('location:logout.php');
-  } else{
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +11,7 @@ if(strlen($_SESSION['id']==0)) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/svg" sizes="32x32" href="../../images/logo.svg">
 	<link rel="stylesheet" type="text/css" href="../../styles/style.css">
-		<title>Doctor | Dashboard FMC Umuahia</title>
+		<title>Doctor | search FMC Umuahia</title>
 	</head>
 	<body>
 		<header>
@@ -109,28 +106,24 @@ if(strlen($_SESSION['id']==0)) {
 					</ul>
 				</div>
 			</div>
-		<h1>DOCTOR DASHBOARD</h1>
-		<section class="section-div">
-			<div>
-				<h2>My Profile</h2>
-				<a href="edit-profile.php">Update Profile</a>
-			</div>
-			<div>
-				<h2>My Appointments</h2>
-				<a href="appointment-history.php">View Appointment History</a>
-			</div>
-		</section>
-	</main>
-</section>
-
-
-<script>
-	jQuery(document).ready(function() {
-		Main.init();
-		FormElements.init();
-	});
-</script>
-
-</body>
+		<h1>DOCTOR SEARCH</h1>
+        <h5 style="color: green; font-size:18px; ">
+			<?php if($msg) { echo htmlentities($msg);}?> 
+		</h5>
+		<section>
+		<fieldset class="DashboardMain-fieldset" style="width: 100%; border-radius: 20px; border: 1px solid #BFBFBF; border-radius: 24px; padding: 7%;">
+			<form class="SignupForm" role="form" name="chngpwd" method="post" onSubmit="return valid();">
+				<label for="exampleInputPassword1">Search by Name/Mobile No</label>
+				<input type="password" name="cfpass" class="InputPassword">
+				<button type="submit" id="submit" name="submit" class="updatebtn">Search</button>
+			</form>
+		</fieldset>
+	</section>
+    <script>
+			jQuery(document).ready(function() {
+				Main.init();
+				FormElements.init();
+			});
+		</script>
+	</body>
 </html>
-<?php } ?>

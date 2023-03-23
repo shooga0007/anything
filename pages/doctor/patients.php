@@ -112,12 +112,10 @@ if(strlen($_SESSION['id']==0)) {
 		<h1>DOCTOR DASHBOARD</h1>
 		<section class="section-div">
 			<div>
-				<h2>My Profile</h2>
-				<a href="edit-profile.php">Update Profile</a>
+				<a href="Add-patient.php">Add patient</a>
 			</div>
 			<div>
-				<h2>My Appointments</h2>
-				<a href="appointment-history.php">View Appointment History</a>
+				<a href="Manage-patient.php">Manage patient</a>
 			</div>
 		</section>
 	</main>
